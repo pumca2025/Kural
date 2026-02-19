@@ -1,0 +1,7 @@
+{
+  "name": "Copy of KuralDub: AI Tamil Script Pro",
+  "description": "Professional Tamil dubbing script generator with advanced AI visuals and audio tools.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
