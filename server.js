@@ -22,6 +22,8 @@ app.use(
             'http://localhost:5173', // Vite dev server
             'http://localhost:3000',
             'http://127.0.0.1:5173',
+            'https://kuraldub.netlify.app/',
+            'https://kural-dub.netlify.app/'
         ],
         credentials: true,
         methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
@@ -133,3 +135,4 @@ connectDB().then(() => {
         console.log(`   GET    /api/health\n`);
     });
 });
+
