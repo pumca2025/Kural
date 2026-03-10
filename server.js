@@ -16,21 +16,7 @@ const PORT = process.env.PORT || 5000;
 // ─── Middleware ────────────────────────────────────────────────────────────
 
 // CORS - allow frontend origins
-app.use(
-    cors({
-        origin: [
-            'http://localhost:5173', // Vite dev server
-            'http://localhost:3000',
-            'http://127.0.0.1:5173',
-            'https://kuraldub.netlify.app/',
-            'https://kural-dub.netlify.app/'
-        ],
-        credentials: true,
-        methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
-        allowedHeaders: ['Content-Type', 'Authorization'],
-    })
-);
-
+app.use(cors());
 // Body parsing
 app.use(express.json({ limit: '10mb' }));
 app.use(express.urlencoded({ extended: true }));
@@ -135,4 +121,5 @@ connectDB().then(() => {
         console.log(`   GET    /api/health\n`);
     });
 });
+
 
